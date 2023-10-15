@@ -1,0 +1,63 @@
+header {
+  display: grid;
+  grid-template-columns: 40% 40% 10%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  height: 100px;
+  .logo {
+    grid-column-start: 1;
+  }
+  .btn {
+    &-contact {
+      grid-column-start: 2;
+      justify-self: end;
+      @media screen {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Let's make a burger button
+  .burger {
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    justify-self: end;
+    span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: black;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+    }
+    &.active {
+      // span{
+      //   background-color: white;
+      // }
+      :first-child {
+        transform: rotate(45deg);
+        align-self: center;
+        position: absolute;
+        top: 10px;
+      }
+      :nth-child(2) {
+        opacity: 0;
+      }
+      :last-child {
+        transform: rotate(-45deg);
+        align-self: center;
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+}
