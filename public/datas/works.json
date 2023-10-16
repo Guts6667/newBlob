@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Sciences Co",
+    "type": "Web Application",
+    "url": "",
+    "date": "2023",
+    "client": "Sciences Co",
+    "service": [
+      "Product Management",
+      "UX/UI Design",
+      "Web Application Development"
+    ],
+    "features": [
+      "Responsive Design",
+      "User Management",
+      "Content Management",
+      "Resource Management",
+      "Payment Integration",
+      "Contact Form",
+      "Subscription Management"
+    ],
+    "ourClient": "Sciences Co is an organization that provides a platform for teachers and student to learn and teach better using cognitives sciences.",
+    "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
+    "goal": "The goal of this project was to build a platform that would help Sciences Co scale their project and reach more teachers and students. With the variety of resources they had, they wanted to build a platform that would make those more accessible and easier to use.",
+    "solution": "We built a progressive web application allowing them to manage their content and resources. The platform is built with React and Laravel and is hosted on OpenOcean. The platform is also integrated with HelloAsso to allow Sciences Co to manage their subscriptions and payments. Users can access the platform on any device and benefit from a native-like experience. The administrator can manage the users, contents, and resources on the platform.",
+    "mainImage": "Science-co-1.png",
+    "pictures": ["Science-co-2.png", "Sciences-co-3.png", "Science-co-4.png"]
+  },
+  {
+    "title": "Edge Dynamics",
+    "type": "Website",
+    "url": "",
+    "date": "2023",
+    "client": "Edge Dynamics",
+    "service": [
+      "Website Development",
+      "UX/UI Design",
+      "Branding",
+      "Logo Design"
+    ],
+    "features": ["Responsive Design", "Contact Form"],
+    "ourClient": "Edge Dynamics is a company that ",
+    "context": "Edge Dynamics aims to revolutionize the industrial sector by deploying wireless IoT devices, including temperature, vibration, humidity, and pressure sensors. Their goal is to significantly reduce the installation costs for non-critical applications through real-time data monitoring, ensuring the early detection of potential equipment failures.",
+    "goal": "Edge Dynamics needed a website to showcase their products and services. They wanted something futuristic and modern that would reflect their brand and their vision with a limited budget.",
+    "solution": "We came up with a simple and modern website that would reflect their brand and their vision. We used a dark theme with a futuristic font to give the website a modern look. The website is built with React and is hosted on Netlify.",
+    "mainImage": "Edge-Dynamics-1.png",
+    "pictures": [
+      "Edge-Dynamics-2.png",
+      "Edge-Dynamics-3.png",
+      "Edge-Dynamics-4.png"
+    ]
+  },
+  {
+    "title": "AG-Designs",
+    "type": "Creative Portfolio",
+    "url": "ag-designs.art",
+    "date": "2022",
+    "client": "AG-Designs",
+    "service": [
+      "Branding",
+      "UX/UI Design",
+      "Logo Design",
+      "Website Development"
+    ],
+    "features": ["Responsive Design", "Contact Form"],
+    "ourClient": "AG-Designs is a creative designer, a passionate UX/UI Designer. Also, behing AG-Designs is no one else than our very own Alexiane Grieu, our UX/UI Designer!",
+    "context": "Alexiane needed a website to showcase her work and her skills. She wanted something simple and modern that would reflect her personality and her style (obviously she went for cream).",
+    "goal": "",
+    "solution": "We made a website that would reflect Alexiane's personality and her style. We used a cream theme with a modern font to give the website a modern look. The website is built with React and is hosted on Netlify.",
+    "mainImage": "ag-designs-1.png",
+    "pictures": [
+      "ag-designs-2.png",
+      "ag-designs-3.png",
+      "ag-designs-4.png"
+    ]
+  },
+  {
+    "title": "MBUZZ",
+    "type": "Website",
+    "url": "mbuzzesports.com",
+    "date": "2022",
+    "client": "MBUZZ",
+    "service": ["Branding", "UX/UI Design", "Logo Design", "Website Development", "Pitch Deck Design"],
+    "features": ["Responsive Design", "Contact Form"],
+    "ourClient": "MBUZZ Esports is a division of the well-established Saudi-based company, Mbuzz Group, specializing in Industrial Communication & Technology (ICT). Visit www.mbuzztech.com for more information. MBUZZ Esports leverages the expertise and network of its parent company to provide innovative gaming solutions and experiences for local enterprises and the gaming community.",
+    "context": "MBUZZ Esports approached us when the new branch was just starting. They needed a website to showcase roadmaps, services, and products.  ",
+    "goal": "The goal was to create something that would speak to the esport community while respecting the branding of the mother company. They wanted something modern and appealing. They also needed a pitch deck to present their company to potential investors.",
+    "solution": "We built a website that would reflect the esport community and the mother company. We used a dark theme with gradients of blue and purple to give the website a modern look. The website is built with React and is hosted on Netlify.",
+    "mainImage": "mbuzz-1.png",
+    "pictures": [ "mbuzz-2.png", "mbuzz-3.png", "mbuzz-4.png"]
+  },
+  {
+    "title": "Saudi Excellence Co",
+    "type": "Website",
+    "url": "saudiexcellenceco.com",
+    "date": "2022",
+    "client": "Saudi Excellence Co",
+    "service": ["UX/UI Design", "Website Development"],
+    "features": ["Contact Form", "Responsive Design"],
+    "ourClient": "Saudi Excellence Holding Company is part of Al-Ramez International Group, which was Established in 1991 with diversified business areas. Saudi Excellence Holding Company is one of the leading companies in the region, providing the latest technologies in the field of security and defense to Saudi Government and Enterprises in Saudi Arabia.",
+    "context": "Saudi Excellence, our initial client, approached us with a limited budget and no online presence. Their goal was to establish a robust digital footprint through the creation of a modern website, aligning with their forward-thinking ethos and dedication to excellence in the security and defense technology sector.",
+    "solution": "For Saudi Excellence, we developed their first website, keeping it simple yet modern. It was an exciting opportunity for us to create their online presence, and we focused on making it user-friendly and easy to navigate. We wanted to reflect their values and professionalism without going overboard, ensuring the site captured their essence and offered a seamless experience for visitors.",
+    "mainImage": "saudiexcellence-1.png",
+    "pictures": [ "saudiexcellence-2.png", "saudiexcellence-3.png", "saudiexcellence-4.png"]
+  },
+  {
+    "title": "",
+    "type": "",
+    "url": "",
+    "date": "",
+    "client": "",
+    "service": [],
+    "ourClient": "",
+    "context": "",
+    "goal": "",
+    "solution": "",
+    "mainImage": "",
+    "pictures": []
+  }
+]

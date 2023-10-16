@@ -1,3 +1,7 @@
+* {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 18px;
+}
 body {
   width: 100%;
   margin: 0;
@@ -30,22 +34,35 @@ button {
         linear-gradient(to right, #9082ed, #edc3be) border-box;
       border-radius: 50px;
       border: 1px solid transparent;
-      :first-child {
-        background: -webkit-linear-gradient(#9082ed, #edc3be);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+      // :first-child {
+      //   background: -webkit-linear-gradient(#9082ed, #edc3be);
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+      // }
     }
   }
 }
 
-.text-body{
-  font-size: 20px;
+.text-20 {
+  font-size: 18px;
 }
-.text-40{
-  font-size: 40px;
+.text-40 {
+  font-size: 40px !important;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  @media screen and (min-width: 768px) {
+    font-size: 104px;
+  }
 }
 
 $gray: 666666;
 $gradient: linear-gradient(to right, #9082ed, #edc3be);
-$gradient-2:linear-gradient(to right, #9082ed, #C8FCEA);
+$gradient-2: linear-gradient(to right, #9082ed, #c8fcea);
+
+.text-gradient {
+  background: -webkit-linear-gradient(#9082ed, #edc3be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

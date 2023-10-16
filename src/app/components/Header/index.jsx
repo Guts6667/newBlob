@@ -6,6 +6,7 @@ import Image from "next/image";
 import Menu from "../Menu";
 import defaultImage from "public/images/blob-dark.svg";
 import hoverImage from "public/images/blob-gradient.svg";
+import EmptyBtn from "../EmptyBtn";
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,9 +31,7 @@ export default function Header() {
             className="logo"
           />
         </a>
-        <a href="/contact" className="btn btn-empty btn-contact">
-          <button>Let's talk!</button>
-        </a>
+        <EmptyBtn path="contact" text="Let's Meet!" classes="btn-header" />
         <button className="burger" onClick={(e) => toggleMenu(e)}>
           <span className="top"></span>
           <span></span>

@@ -5,28 +5,28 @@ header {
   justify-content: space-between;
   padding: 0 25px;
   height: 100px;
+  z-index: 80;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   .logo {
     grid-column-start: 1;
   }
-  .btn {
-    &-contact {
-      grid-column-start: 2;
-      justify-self: end;
-      @media screen {
-        @media screen and (max-width: 768px) {
-          display: none;
-        }
-      }
+
+  .btn-header {
+    justify-self: end;
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 
-  // Let's make a burger button
   .burger {
     grid-column-start: 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
+    row-gap: 5px;
+    height: fit-content;
     width: fit-content;
     position: relative;
     cursor: pointer;
@@ -40,14 +40,10 @@ header {
       transition: 0.4s ease-in-out;
     }
     &.active {
-      // span{
-      //   background-color: white;
-      // }
       :first-child {
         transform: rotate(45deg);
         align-self: center;
         position: absolute;
-        top: 10px;
       }
       :nth-child(2) {
         opacity: 0;
@@ -56,7 +52,6 @@ header {
         transform: rotate(-45deg);
         align-self: center;
         position: absolute;
-        top: 10px;
       }
     }
   }

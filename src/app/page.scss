@@ -1,0 +1,71 @@
+// Homepage
+.page-spacing {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-top: 100px;
+  padding: 0 50px;
+}
+.container__hero {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
+
+  &-header {
+    em {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+      font-style: normal;
+      overflow: hidden;
+      height: 80px;
+      span {
+        height: 80px;
+        animation: move-text 3s ease-in-out alternate infinite;
+        @keyframes move-text {
+          0% {
+            transform: translateY(0);
+          }
+
+          100% {
+            transform: translateY(-140px);
+          }
+        }
+      }
+      @media screen and (min-width: 768px) {
+        height: 130px;
+        span {
+          height: 130px;
+          animation: move-text 3s ease-in-out alternate infinite;
+          @keyframes move-text {
+            0% {
+              transform: translateY(0);
+            }
+
+            100% {
+              transform: translateY(-190px);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 50px;
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 30% 50%;
+      justify-content: space-between;
+    }
+    p {
+      margin-block: 0;
+    }
+  }
+}

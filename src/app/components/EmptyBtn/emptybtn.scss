@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  width: fit-content;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  height: fit-content;
+  &-empty {
+    border: 1px solid black;
+    background-color: transparent;
+
+    &:hover {
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #9082ed, #edc3be) border-box;
+      border-radius: 50px;
+      border: 1px solid transparent;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
