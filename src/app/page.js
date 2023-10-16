@@ -25,7 +25,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section></section>
+      <section className="container__selectedWorks">
+        <h2>Selected Works</h2>
+      </section>
     </main>
   );
 }

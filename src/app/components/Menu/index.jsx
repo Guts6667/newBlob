@@ -5,7 +5,7 @@ export default function Menu() {
   return (
     <section className="section-menu menu-animation">
       <nav className="text-40">
-        <ul>
+        <ul >
           <li>
             <a href="/">
               <span>Home</span>{" "}
