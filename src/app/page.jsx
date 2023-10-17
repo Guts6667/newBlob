@@ -1,12 +1,22 @@
 import "./page.scss";
 import EmptyBtn from "./components/EmptyBtn";
 import CardSelectedWork from "./components/CardSelectedWork";
-import { promises as fs } from 'fs';
+import { promises as fs } from "fs";
+import CardService from "./components/CardServices";
 
 export default async function Home() {
-  const datasSelectedWork = await fs.readFile(process.cwd() + '/public/datas/works.json', 'utf8');
+  const datasSelectedWork = await fs.readFile(
+    process.cwd() + "/public/datas/works.json",
+    "utf8"
+  );
   const selectedWorks = JSON.parse(datasSelectedWork).slice(0, 3);
   console.log(selectedWorks);
+  const datasServices = await fs.readFile(
+    process.cwd() + "/public/datas/services.json",
+    "utf8"
+  );
+  const services = JSON.parse(datasServices);
+  console.log(services);
   return (
     <main className="page-spacing">
       <section className="container__hero">
@@ -32,7 +42,7 @@ export default async function Home() {
       </section>
       <section className="container__selectedWorks">
         <h2>Selected Works</h2>
-        <section className="container__works">
+        <div className="container__works">
           {selectedWorks.map((item, index) => (
             <CardSelectedWork
               key={index}
@@ -41,9 +51,22 @@ export default async function Home() {
               type={item.type}
               path={"/works/" + item.title}
             />
-          )
-          )}
-        </section>
+          ))}
+        </div>
+      </section>
+      <section className="container__services">
+        <h2>Services</h2>
+        <div className="container__services-cards">
+          {services.map((service, index) => (
+            <CardService
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.desc}
+              services={service.services}
+            />
+          ))}
+        </div>
       </section>
     </main>
   );

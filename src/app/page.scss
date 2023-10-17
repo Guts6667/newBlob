@@ -67,8 +67,20 @@
     }
   }
 }
-.container__works{
+.container__works {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+}
+
+.container__services {
+  display: flex;
+  flex-direction: column;
+  &-cards {
+    display: flex;
+    flex-flow: wrap;
+    row-gap: 25px;
+    justify-content: space-between;
+
+  }
 }

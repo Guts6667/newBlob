@@ -1,0 +1,78 @@
+[
+  {
+    "icon": "icon-creative.svg",
+    "title": "Creative Design",
+    "desc": "We help you define your digital strategy and create a roadmap for success.",
+    "services": [
+      {
+        "title": "Logo Design",
+        "desc": "Create a memorable brand identity with a unique logo."
+      },
+      {
+        "title": "UI/UX Design",
+        "desc": "Craft intuitive and visually pleasing user interfaces for websites and applications."
+      },
+      {
+        "title": "Visual Branding",
+        "desc": "Establish a cohesive and visually appealing brand presence"
+      }
+    ]
+  },
+  {
+    "icon": "icon-website.svg",
+    "title": "Website Development",
+    "desc": "We specialize in building websites that not only look fantastic but also perform flawlessly.",
+    "services": [
+      {
+        "title": "Responsive Websites",
+        "desc": "Ensure your website looks and functions seamlessly across all devices"
+      },
+      {
+        "title": "Custom Development",
+        "desc": "Tailor-made websites that match your unique requirements."
+      },
+      {
+        "title": "E-Commerce Solutions",
+        "desc": "Set up online stores to boost your sales and customer reach."
+      }
+    ]
+  },
+  {
+    "icon": "icon-app.svg",
+    "title": "Product Management",
+    "desc": "From ideation to launch and beyond, we guide your product's journey, ensuring it aligns with market needs and user expectations.",
+    "services": [
+      {
+        "title": "Product Ideation",
+        "desc": "Collaborate with our experts to refine your product concept."
+      },
+      {
+        "title": "Roadmap Development",
+        "desc": "Create a strategic plan for product development and enhancement."
+      },
+      {
+        "title": "User-Centric Approach",
+        "desc": "Prioritize features and updates based on user feedback and market trends."
+      }
+    ]
+  },
+  {
+    "icon": "icon-pm.svg",
+    "title": "Application Development",
+    "desc": "We create mobile and web applications that are intuitive, user-friendly, and built for success.",
+    "services": [
+      {
+        "title": "Mobile Apps",
+        "desc": "Develop engaging mobile applications for iOS and Android platforms."
+      },
+      {
+        "title": "Web Applications",
+        "desc": "Create web-based applications that streamline your business processes"
+      },
+      {
+        "title": "User-Centric Design",
+        "desc": "Prioritize user experience and satisfaction for enhanced usability."
+      }
+    ]
+  }
+]

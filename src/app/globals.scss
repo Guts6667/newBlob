@@ -7,9 +7,9 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: black !important;
 }
-p{
+p {
   font-size: 18px;
 }
 button {
@@ -58,7 +58,7 @@ h1 {
     font-size: 104px !important;
   }
 }
-h2{
+h2 {
   font-size: 48px;
   font-weight: 600;
   @media screen and (min-width: 768px) {
@@ -75,7 +75,6 @@ $gradient-2: linear-gradient(to right, #9082ed, #c8fcea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .page-spacing {
   display: flex;
