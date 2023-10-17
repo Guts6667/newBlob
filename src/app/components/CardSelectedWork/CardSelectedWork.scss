@@ -1,0 +1,48 @@
+.cardSelectedWork {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  &-imgWrapper {
+    width: 100%;
+    max-width: 1280px;
+    height: 600px;
+    border-radius: 25px;
+    overflow: hidden;
+    img {
+      position: relative !important;
+      //   object-position: center;
+      transform: scale(1.5);
+      transition: 0.4s ease-in-out;
+      filter: brightness(0.5);
+      &:hover {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+      @media (hover: none) {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    button {
+        border: 1px solid black;
+        border-radius: 100px;
+      img{
+        margin: 10px 15px;
+      }
+    }
+  }
+}
+
+
+
+.test{
+    transform: scale(1);
+        filter: brightness(1);
+}

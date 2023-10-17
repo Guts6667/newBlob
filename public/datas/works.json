@@ -23,8 +23,8 @@
     "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
     "goal": "The goal of this project was to build a platform that would help Sciences Co scale their project and reach more teachers and students. With the variety of resources they had, they wanted to build a platform that would make those more accessible and easier to use.",
     "solution": "We built a progressive web application allowing them to manage their content and resources. The platform is built with React and Laravel and is hosted on OpenOcean. The platform is also integrated with HelloAsso to allow Sciences Co to manage their subscriptions and payments. Users can access the platform on any device and benefit from a native-like experience. The administrator can manage the users, contents, and resources on the platform.",
-    "mainImage": "Science-co-1.png",
-    "pictures": ["Science-co-2.png", "Sciences-co-3.png", "Science-co-4.png"]
+    "mainImage": "Sciences-co-1.png",
+    "pictures": ["Sciences-co-2.png", "Sciences-co-3.png", "Sciences-co-4.png"]
   },
   {
     "title": "Edge Dynamics",
@@ -43,7 +43,7 @@
     "context": "Edge Dynamics aims to revolutionize the industrial sector by deploying wireless IoT devices, including temperature, vibration, humidity, and pressure sensors. Their goal is to significantly reduce the installation costs for non-critical applications through real-time data monitoring, ensuring the early detection of potential equipment failures.",
     "goal": "Edge Dynamics needed a website to showcase their products and services. They wanted something futuristic and modern that would reflect their brand and their vision with a limited budget.",
     "solution": "We came up with a simple and modern website that would reflect their brand and their vision. We used a dark theme with a futuristic font to give the website a modern look. The website is built with React and is hosted on Netlify.",
-    "mainImage": "Edge-Dynamics-1.png",
+    "mainImage": "Edge-Dynamics-2.png",
     "pictures": [
       "Edge-Dynamics-2.png",
       "Edge-Dynamics-3.png",
@@ -102,19 +102,5 @@
     "solution": "For Saudi Excellence, we developed their first website, keeping it simple yet modern. It was an exciting opportunity for us to create their online presence, and we focused on making it user-friendly and easy to navigate. We wanted to reflect their values and professionalism without going overboard, ensuring the site captured their essence and offered a seamless experience for visitors.",
     "mainImage": "saudiexcellence-1.png",
     "pictures": [ "saudiexcellence-2.png", "saudiexcellence-3.png", "saudiexcellence-4.png"]
-  },
-  {
-    "title": "",
-    "type": "",
-    "url": "",
-    "date": "",
-    "client": "",
-    "service": [],
-    "ourClient": "",
-    "context": "",
-    "goal": "",
-    "solution": "",
-    "mainImage": "",
-    "pictures": []
   }
 ]

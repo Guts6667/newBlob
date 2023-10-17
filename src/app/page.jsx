@@ -1,7 +1,12 @@
-import "./page.scss"
+import "./page.scss";
 import EmptyBtn from "./components/EmptyBtn";
+import CardSelectedWork from "./components/CardSelectedWork";
+import { promises as fs } from 'fs';
 
-export default function Home() {
+export default async function Home() {
+  const datasSelectedWork = await fs.readFile(process.cwd() + '/public/datas/works.json', 'utf8');
+  const selectedWorks = JSON.parse(datasSelectedWork).slice(0, 3);
+  console.log(selectedWorks);
   return (
     <main className="page-spacing">
       <section className="container__hero">
@@ -27,6 +32,18 @@ export default function Home() {
       </section>
       <section className="container__selectedWorks">
         <h2>Selected Works</h2>
+        <section className="container__works">
+          {selectedWorks.map((item, index) => (
+            <CardSelectedWork
+              key={index}
+              img={item.mainImage}
+              title={item.title}
+              type={item.type}
+              path={"/works/" + item.title}
+            />
+          )
+          )}
+        </section>
       </section>
     </main>
   );
