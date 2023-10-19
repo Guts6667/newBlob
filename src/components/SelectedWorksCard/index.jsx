@@ -9,6 +9,7 @@ export default function SelectedWorksCard({ img, title, type, path }) {
           <Image
             src={`/images/${img}`}
             alt={title}
+            priority
             fill
             objectFit="cover"
             className="brightness-50 scale-150 hover:scale-100 hover:brightness-100 transition-all duration-500 ease-in-out"

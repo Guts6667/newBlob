@@ -8,9 +8,9 @@ export default function HeroHome() {
       <h1 className="text-[64px] lg:text-[104px] font-semibold">
         Designing Tomorrow,
         <br />
-        <em className="move-text">
-          <span className="today text-gradient">Today</span>
-          <span className="together text-gradient">Together</span>
+        <em className="move-text ">
+          <span className="today text-gradient text-[64px] lg:text-[104px] font-semibold">Today</span>
+          <span className="together text-gradient text-[64px] lg:text-[104px] font-semibold">Together</span>
         </em>
       </h1>
       <div className="flex flex-col justify-between lg:flex-row gap-y-50">
