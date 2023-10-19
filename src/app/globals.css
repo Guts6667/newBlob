@@ -12,7 +12,7 @@
 }
 
 h1 {
-  font-size: 64px !important;
+  font-size: 64px ;
   font-weight: 600;
 }
 h2 {
@@ -22,14 +22,21 @@ h2 {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 104px !important;
+    font-size: 104px ;
   }
   h2 {
     font-size: 72px;
   }
+  p{
+    font-size: 20px;
+  }
 }
 h3 {
   font-size: 32px;
+  font-weight: 600;
+}
+h4{
+  font-size: 24px;
   font-weight: 600;
 }
 

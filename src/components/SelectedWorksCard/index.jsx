@@ -1,14 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-export default function SelectedWorksCard({ img, title, type, path }) {
+
+export default function SelectedWorksCard({ img, client, type, path }) {
+  console.log("path:", path)
   return (
     <article className="flex flex-col ">
-      <Link href={path} className="flex flex-col gap-y-25 ">
+      <Link href={path}  className="flex flex-col gap-y-25 ">
         <div className="img-wrapper w-full max-w-[1280px] h-[600px]  rounded-[25px] overflow-hidden relative">
           <Image
             src={`/images/${img}`}
-            alt={title}
+            alt={client}
             priority
             fill
             objectFit="cover"
@@ -16,8 +18,8 @@ export default function SelectedWorksCard({ img, title, type, path }) {
           />
         </div>
         <div className="flex justify-between">
-          <div >
-            <h3>{title}</h3>
+          <div>
+            <h3>{client}</h3>
             <span>{type}</span>
           </div>
           <button>

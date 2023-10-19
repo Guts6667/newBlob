@@ -1,15 +1,15 @@
 import React from "react";
-import SelectedWorksCard from "../SelectedWorksCard";
+import SelectedWorksCard from "@/components/SelectedWorksCard";
 import { promises as fs } from "fs";
-export default async function SelectedWorks() {
+export default async function WorkPage() {
   const datasSelectedWork = await fs.readFile(
     process.cwd() + "/public/datas/works.json",
     "utf8"
   );
-  const selectedWorks = JSON.parse(datasSelectedWork).slice(0, 3);
+  const selectedWorks = JSON.parse(datasSelectedWork);
   return (
-    <section className="flex flex-col m-y-50 gap-y-50">
-      <h2>Selected Works</h2>
+    <section className="flex flex-col m-y-50 gap-y-50 px-25 lg:px-50 mt-[200px]">
+      <h2>Disover Our Works</h2>
       {selectedWorks.map((item, index) => {
         return (
           <SelectedWorksCard

@@ -1,6 +1,5 @@
 import React from "react";
 import "./herohome.scss";
-import EmptyBtn from "../EmptyBtn";
 import PlainBtn from "../PlainBtn";
 export default function HeroHome() {
   return (
