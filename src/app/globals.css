@@ -2,21 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Inter Tight";
-  src: url("/fonts/Inter-Tight/InterTight-VariableFont_wght.ttf");
-  
-}
 * {
-  font-family: "Inter Tight", sans-serif;
   font-size: 18px;
 }
-p, button {
+p,
+button {
   font-weight: 400;
 }
 
 h1 {
-  font-size: 64px ;
+  font-size: 64px;
   font-weight: 600;
 }
 h2 {
@@ -26,12 +21,12 @@ h2 {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 104px ;
+    font-size: 104px;
   }
   h2 {
     font-size: 72px;
   }
-  p{
+  p {
     font-size: 20px;
   }
 }
@@ -39,7 +34,7 @@ h3 {
   font-size: 32px;
   font-weight: 600;
 }
-h4{
+h4 {
   font-size: 24px;
   font-weight: 600;
 }
@@ -51,6 +46,12 @@ h4{
 }
 
 .border-gradient:hover {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #9082ed, #edc3be) border-box;
+  border: 1px solid transparent;
+}
+.border-gradient-perm {
   transition: all 0.3s ease-in-out;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #9082ed, #edc3be) border-box;

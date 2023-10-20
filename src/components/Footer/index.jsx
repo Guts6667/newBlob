@@ -26,8 +26,8 @@ export default function Footer() {
   ];
   return (
     <footer className="px-25 lg:px-50 py-50 text-white bg-black mt-[150px] flex flex-col gap-y-50">
-      <h2 className="text-[48px] lg:text-[72px] flex">
-        <em className="text-gradient text-[48px] lg:text-[72px] not-italic !important">
+      <h2 className="text-[48px] flex flex-row !important">
+        <em className="text-gradient text-[48px] not-italic !important">
           BLOB
         </em>
         -Agency

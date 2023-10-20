@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         gray: "#666666",
+        lightgray:"rgba(217, 217, 217, 0.30)",
         purple:"#9082ED",
         peach: "#EDC3BE"
       },

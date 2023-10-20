@@ -1,20 +1,8 @@
-import EmptyBtn from "@/components/EmptyBtn";
 import Image from "next/image";
-// import fs from "fs/promises";
 import BtnWebsite from "@/components/BtnWebsite";
 export default async function WorkPage(workId) {
-
   const datas = await import("/public/datas/works.json");
   const work = datas.default.find((item) => item.id === workId.params.workId);
-  // const selectedWorkId = workId.params.workId;
-  // console.log(selectedWorkId);
-  // const datasSelectedWork = await fs.readFile(
-  //   process.cwd() + "/public/datas/works.json",
-  //   "utf8"
-  // );
-  // const selectedWorks = JSON.parse(datasSelectedWork);
-  // const work = selectedWorks.find((item) => item.id === selectedWorkId);
-  // console.log(work);
 
   return (
     <main className="flex flex-col gap-y-100 mt-[150px] px-25 lg:px-50 gap-y-50">
@@ -64,25 +52,33 @@ export default async function WorkPage(workId) {
           </div>
         </div>
         <div className="lg:w-[70%] flex flex-col gap-y-50">
-          <div>
-            <h3>Our Client</h3>
-            <p>{work.ourClient}</p>
-          </div>
-          <div>
-            <h3>Context</h3>
-            <p>{work.context}</p>
-          </div>
-          <div>
-            <h3>Goal</h3>
-            <p>{work.goal}</p>
-          </div>
-          <div>
-            <h3>Solution</h3>
-            <p>{work.solution}</p>
-          </div>
+          {work.ourClient && (
+            <div>
+              <h3>Our Client</h3>
+              <p>{work.ourClient}</p>
+            </div>
+          )}
+          {work.context && (
+            <div>
+              <h3>Context</h3>
+              <p>{work.context}</p>
+            </div>
+          )}
+          {work.goal && (
+            <div>
+              <h3>Goal</h3>
+              <p>{work.goal}</p>
+            </div>
+          )}
+          {work.solution && (
+            <div>
+              <h3>Solution</h3>
+              <p>{work.solution}</p>
+            </div>
+          )}
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-25">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-25 justify-between">
         {work.pictures.map((item, index) => (
           <div
             key={index}

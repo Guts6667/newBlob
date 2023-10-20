@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "icon": "icon-creative.svg",
     "title": "Creative Design",
     "desc": "We help you define your digital strategy and create a roadmap for success.",
@@ -19,6 +20,7 @@
     ]
   },
   {
+    "id": 2,
     "icon": "icon-website.svg",
     "title": "Website Development",
     "desc": "We specialize in building websites that not only look fantastic but also perform flawlessly.",
@@ -38,6 +40,7 @@
     ]
   },
   {
+    "id": 3,
     "icon": "icon-app.svg",
     "title": "Product Management",
     "desc": "From ideation to launch and beyond, we guide your product's journey, ensuring it aligns with market needs and user expectations.",
@@ -57,6 +60,7 @@
     ]
   },
   {
+    "id": 4,
     "icon": "icon-pm.svg",
     "title": "Application Development",
     "desc": "We create mobile and web applications that are intuitive, user-friendly, and built for success.",

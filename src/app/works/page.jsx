@@ -1,12 +1,6 @@
 import React from "react";
 import SelectedWorksCard from "@/components/SelectedWorksCard";
-// import { promises as fs } from "fs";
 export default async function WorkPage() {
-  // const datasSelectedWork = await fs.readFile(
-  //   process.cwd() + "/public/datas/works.json",
-  //   "utf8"
-  // );
-  // const selectedWorks = JSON.parse(datasSelectedWork);
   const datas = await import("/public/datas/works.json");
   const selectedWorks = datas.default;
   return (

@@ -7,7 +7,7 @@ export default function SelectedWorksCard({ img, client, type, path }) {
   return (
     <article className="flex flex-col ">
       <Link href={path}  className="flex flex-col gap-y-25 ">
-        <div className="img-wrapper w-full max-w-[1280px] h-[600px]  rounded-[25px] overflow-hidden relative">
+        <div className="img-wrapper w-full  h-[600px]  rounded-[25px] overflow-hidden relative">
           <Image
             src={`/images/${img}`}
             alt={client}
