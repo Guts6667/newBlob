@@ -1,5 +1,5 @@
 import React from "react";
-import SelectedWorksCard from "../SelectedWorksCard";
+import SelectedWorksCard from "../../SelectedWorksCard";
 import { promises as fs } from "fs";
 export default async function SelectedWorks() {
   const datasSelectedWork = await fs.readFile(

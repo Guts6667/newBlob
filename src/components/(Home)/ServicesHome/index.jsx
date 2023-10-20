@@ -1,5 +1,5 @@
 import React from 'react'
-import CardService from '../CardService'
+import CardService from '../../CardService'
 
 export default async function ServicesHome() {
 const datas = await import('/public/datas/services.json')

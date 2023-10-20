@@ -1,5 +1,5 @@
 import React from "react";
-import BtnSocial from "../BtnSocial";
+import BtnSocial from "../(Buttons)/BtnSocial";
 import Link from "next/link";
 export default function Footer() {
   const socials = [

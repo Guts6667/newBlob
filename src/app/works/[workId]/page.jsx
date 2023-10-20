@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BtnWebsite from "@/components/BtnWebsite";
+import BtnWebsite from "@/components/(Buttons)/BtnWebsite";
 export default async function WorkPage(workId) {
   const datas = await import("/public/datas/works.json");
   const work = datas.default.find((item) => item.id === workId.params.workId);

@@ -1,6 +1,7 @@
-import HeroHome from "@/components/HeroHome";
-import SelectedWorks from "@/components/SelectedWorks";
-import ServicesHome from "@/components/ServicesHome";
+import AboutHome from "@/components/(Home)/AboutHome";
+import HeroHome from "@/components/(Home)/HeroHome";
+import SelectedWorks from "@/components/(Home)/SelectedWorks";
+import ServicesHome from "@/components/(Home)/ServicesHome";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroHome />
       <SelectedWorks />
       <ServicesHome />
+      <AboutHome />
     </main>
   );
 }

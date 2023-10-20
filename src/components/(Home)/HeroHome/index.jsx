@@ -1,6 +1,6 @@
 import React from "react";
 import "./herohome.scss";
-import PlainBtn from "../PlainBtn";
+import PlainBtn from "../../(Buttons)/PlainBtn";
 export default function HeroHome() {
   return (
     <section className="flex flex-col gap-y-50">

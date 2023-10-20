@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import BtnMenu from "../BtnMenu";
+import BtnMenu from "../(Buttons)/BtnMenu";
 import { useState } from "react";
 import Menu from "../Menu";
-import EmptyBtn from "../EmptyBtn";
+import EmptyBtn from "../(Buttons)/EmptyBtn";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [showBtn, setShowBtn] = useState(false);
