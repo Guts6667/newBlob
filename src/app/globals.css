@@ -5,6 +5,7 @@
 @font-face {
   font-family: "Inter Tight";
   src: url("/fonts/Inter-Tight/InterTight-VariableFont_wght.ttf");
+  
 }
 * {
   font-family: "Inter Tight", sans-serif;

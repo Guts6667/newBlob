@@ -1,17 +1,20 @@
 import EmptyBtn from "@/components/EmptyBtn";
 import Image from "next/image";
-import fs from "fs/promises";
+// import fs from "fs/promises";
 import BtnWebsite from "@/components/BtnWebsite";
 export default async function WorkPage(workId) {
-  const selectedWorkId = workId.params.workId;
-  console.log(selectedWorkId);
-  const datasSelectedWork = await fs.readFile(
-    process.cwd() + "/public/datas/works.json",
-    "utf8"
-  );
-  const selectedWorks = JSON.parse(datasSelectedWork);
-  const work = selectedWorks.find((item) => item.id === selectedWorkId);
-  console.log(work);
+
+  const datas = await import("/public/datas/works.json");
+  const work = datas.default.find((item) => item.id === workId.params.workId);
+  // const selectedWorkId = workId.params.workId;
+  // console.log(selectedWorkId);
+  // const datasSelectedWork = await fs.readFile(
+  //   process.cwd() + "/public/datas/works.json",
+  //   "utf8"
+  // );
+  // const selectedWorks = JSON.parse(datasSelectedWork);
+  // const work = selectedWorks.find((item) => item.id === selectedWorkId);
+  // console.log(work);
 
   return (
     <main className="flex flex-col gap-y-100 mt-[150px] px-25 lg:px-50 gap-y-50">
