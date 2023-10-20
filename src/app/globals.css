@@ -10,6 +10,9 @@
   font-family: "Inter Tight", sans-serif;
   font-size: 18px;
 }
+p, button {
+  font-weight: 400;
+}
 
 h1 {
   font-size: 64px ;

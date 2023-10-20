@@ -1,6 +1,7 @@
 import EmptyBtn from "@/components/EmptyBtn";
 import Image from "next/image";
 import fs from "fs/promises";
+import BtnWebsite from "@/components/BtnWebsite";
 export default async function WorkPage(workId) {
   const selectedWorkId = workId.params.workId;
   console.log(selectedWorkId);
@@ -56,7 +57,7 @@ export default async function WorkPage(workId) {
             </div>
           </aside>
           <div className="">
-            <EmptyBtn path={work.url} text="Visit Website" />
+            <BtnWebsite path={work.url} text="Visit Website" />
           </div>
         </div>
         <div className="lg:w-[70%] flex flex-col gap-y-50">
