@@ -14,7 +14,7 @@ export default function CardService({ service }) {
         showServices ? " lg:w-[40%] border-gradient-perm" : ""
       }`}
     >
-      <div className="flex flex-col gap-y-25">
+      <div className="flex flex-col gap-y-25 text-center items-center">
         <div className="bg-lightgray p-[10px] rounded-full w-[50px] h-[50px] flex flex-col justify-center items-center">
           <Image
             src={`/images/${service.icon}`}
