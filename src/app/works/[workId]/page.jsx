@@ -1,8 +1,26 @@
 import Image from "next/image";
-import BtnWebsite from "@/components/(Buttons)/BtnWebsite";
+import WorkCarousel from "@/components/(Work)/WorkCarousel";
+import WorkDescription from "@/components/(Work)/WorkDescription";
+import WorkImageGrid from "@/components/(Work)/WorkImageGrid";
 export default async function WorkPage(workId) {
   const datas = await import("/public/datas/works.json");
-  const work = datas.default.find((item) => item.id === workId.params.workId);
+  const works = datas.default;
+  const work = works.find((item) => item.id == workId.params.workId);
+  let nextWorkId;
+  if (parseInt(workId.params.workId) === works.length - 1) {
+    nextWorkId = "0";
+  } else {
+    nextWorkId = (parseInt(workId.params.workId) + 1).toString();
+  }
+  const nextWork = works.find((item) => item.id === nextWorkId);
+
+  let previousWorkId;
+  if (parseInt(workId.params.workId) === 0) {
+    previousWorkId = (works.length - 1).toString();
+  } else {
+    previousWorkId = (parseInt(workId.params.workId) - 1).toString();
+  }
+  const previousWork = works.find((item) => item.id == previousWorkId);
 
   return (
     <main className="flex flex-col gap-y-100 mt-[150px] px-25 lg:px-50 gap-y-50">
@@ -19,82 +37,9 @@ export default async function WorkPage(workId) {
           objectFit="cover"
         />
       </div>
-      <div className="lg:flex lg:flex-row flex flex-col gap-y-50">
-        <div className=" flex flex-col gap-y-25  lg:w-[40%]">
-          <aside className="flex flex-col gap-y-25">
-            <div>
-              <h4>Date</h4>
-              <span className="text-gray">{work.date}</span>
-            </div>
-            <div className>
-              <h4>Client Name</h4>
-              <span className="text-gray">{work.client}</span>
-            </div>
-            <div className="flex flex-col">
-              <h4>Services</h4>
-              {work.service.map((item, index) => (
-                <span key={index} className="text-gray">
-                  {item}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col">
-              <h4>Features</h4>
-              {work.features.map((item, index) => (
-                <span key={index} className="text-gray">
-                  {item}
-                </span>
-              ))}
-            </div>
-          </aside>
-          <div className="">
-            <BtnWebsite path={work.url} text="Visit Website" />
-          </div>
-        </div>
-        <div className="lg:w-[70%] flex flex-col gap-y-50">
-          {work.ourClient && (
-            <div>
-              <h3>Our Client</h3>
-              <p>{work.ourClient}</p>
-            </div>
-          )}
-          {work.context && (
-            <div>
-              <h3>Context</h3>
-              <p>{work.context}</p>
-            </div>
-          )}
-          {work.goal && (
-            <div>
-              <h3>Goal</h3>
-              <p>{work.goal}</p>
-            </div>
-          )}
-          {work.solution && (
-            <div>
-              <h3>Solution</h3>
-              <p>{work.solution}</p>
-            </div>
-          )}
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-25 justify-between">
-        {work.pictures.map((item, index) => (
-          <div
-            key={index}
-            className={`w-full  h-[600px] rounded-[25px] overflow-hidden relative ${
-              index == 2 ? "lg:col-span-3" : ""
-            }`}
-          >
-            <Image
-              src={`/images/${item}`}
-              fill
-              objectFit="cover"
-              alt={work.client}
-            />
-          </div>
-        ))}
-      </div>
+      <WorkDescription work={work} />
+      <WorkImageGrid work={work} />
+      <WorkCarousel previousWork={previousWork} nextWork={nextWork} />
     </main>
   );
 }

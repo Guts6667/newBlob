@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function SelectedWorksCard({ img, client, type, path }) {
+export default function WorkCard({ img, client, type, path, customClass }) {
   console.log("path:", path)
   return (
     <article className="flex flex-col ">
       <Link href={path}  className="flex flex-col gap-y-25 ">
-        <div className="img-wrapper w-full h-[500px] md:h-[600px]  rounded-[25px] overflow-hidden relative">
+        <div className={`img-wrapper w-full  rounded-[25px] overflow-hidden relative ${customClass}`}>
           <Image
             src={`/images/${img}`}
             alt={client}
