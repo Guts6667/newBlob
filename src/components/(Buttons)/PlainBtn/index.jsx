@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function PlainBtn({ path, text, customClass }) {
+export default function PlainBtn({ path, text, customClass, customLink }) {
   return (
-    <Link href={`/${path}`}>
+    <Link href={`/${path}`} className={`${customLink}`}>
       <button
-        className={`rounded-full text-center py-[10px] px-[30px] w-fit flex justify-center items-center gap-x-[10px] text-white bg-black from-purple to-peach hover:bg-gradient-to-r  ${customClass}} !important`}
+        className={`rounded-full text-center py-[10px] px-[30px]  flex justify-center items-center gap-x-[10px] text-white bg-black from-purple to-peach hover:bg-gradient-to-r  ${customClass} !important`}
       >
         <span>{text}</span>
         <Image

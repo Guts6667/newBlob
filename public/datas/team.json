@@ -1,9 +1,10 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Wesley Peeters",
     "role": "Software Engineer & Tech Savvy",
     "image": "wesley.jpeg",
+    "bannerImage": "wesley-stationary.png",
     "catchphrase": "I'm a software engineer and tech-savvy individual who loves to learn new things and share my knowledge with others.",
     "description": [
       "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
@@ -21,39 +22,61 @@
       {
         "title": "3 degrees",
         "description": "in tech-related fields"
+      }
+    ],
+    "social": [
+      {
+        "icon": "icon-linkedin.svg",
+        "link": "https://www.linkedin.com/in/rayan-chambet/"
+      },
+      {
+        "icon": "icon-github.svg",
+        "link": "https://www.linkedin.com/in/rayan-chambet/"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Alexiane Grieu",
+    "role": "UI/UX Designer & Product Manager",
+    "image": "alexiane-grieu.png",
+    "bannerImage": "alexiane-stationary.png",
+    "catchphrase": "I'm a software engineer and tech-savvy individual who loves to learn new things and share my knowledge with others.",
+    "description": [
+      "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
+      "Passionate about problem-solving and innovation, I thrive in creative, collaborative environments, emphasizing teamwork's power in achieving impactful results. Committed to delivering high-quality digital experiences, I aim to foster lasting connections and significant business growth."
+    ],
+    "experiences": [
+      {
+        "title": "3 years",
+        "description": "of experience in Software Engineering"
+      },
+      {
+        "title": "1 year",
+        "description": "as a Product Manager"
+      },
+      {
+        "title": "3 degrees",
+        "description": "in tech-related fields"
+      }
+    ],
+    "social": [
+      {
+        "icon": "icon-linkedin.svg",
+        "link": "https://www.linkedin.com/in/rayan-chambet/"
+      },
+      {
+        "icon": "icon-github.svg",
+        "link": "https://www.linkedin.com/in/rayan-chambet/"
       }
     ]
   },
   {
     "id": 2,
-    "name": "Alexiane Grieu",
-    "role": "UI/UX Designer & Product Manager",
-    "image": "alexiane-grieu.png",
-    "catchphrase": "I'm a software engineer and tech-savvy individual who loves to learn new things and share my knowledge with others.",
-    "description": [
-      "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
-      "Passionate about problem-solving and innovation, I thrive in creative, collaborative environments, emphasizing teamwork's power in achieving impactful results. Committed to delivering high-quality digital experiences, I aim to foster lasting connections and significant business growth."
-    ],
-    "experiences": [
-      {
-        "title": "3 years",
-        "description": "of experience in Software Engineering"
-      },
-      {
-        "title": "1 year",
-        "description": "as a Product Manager"
-      },
-      {
-        "title": "3 degrees",
-        "description": "in tech-related fields"
-      }
-    ]
-  },
-  {
-    "id": 3,
     "name": "Rayan Chambet",
     "role": "Product Manager & Software Engineer",
     "image": "rayan.jpg",
+    "bannerImage": "rayan-stationary.png",
     "catchphrase": "As a passionate Product Manager and Software Engineer, I drive partnerships and ensure top-notch performance, delivering excellence with every project.",
     "description": [
       "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
@@ -75,12 +98,21 @@
     ],
     "social": [
       {
-        "icon": "linkedin.svg",
+        "icon": "icon-linkedin.svg",
         "link": "https://www.linkedin.com/in/rayan-chambet/"
       },
       {
-        "icon": "github.svg",
+        "icon": "icon-github.svg",
         "link": "https://www.linkedin.com/in/rayan-chambet/"
+      }
+      ,
+      {
+        "icon": "icon-mail.svg",
+        "link": "mailto:chambet.dev@gmail.com"
+      },
+      {
+        "icon": "icon-website.svg",
+        "link": "https://www.rayanchambet.com"
       }
     ]
   },
@@ -89,6 +121,7 @@
     "name": "Margaux Toquero",
     "role": "UI Designer & Motion Designer",
     "image": "margaux-toquero.png",
+    "bannerImage": "wesley-stationary.png",
     "catchphrase": "As a passionate Product Manager and Software Engineer, I drive partnerships and ensure top-notch performance, delivering excellence with every project.",
     "description": [
       "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
@@ -110,11 +143,11 @@
     ],
     "social": [
       {
-        "icon": "linkedin.svg",
+        "icon": "icon-linkedin.svg",
         "link": "https://www.linkedin.com/in/rayan-chambet/"
       },
       {
-        "icon": "github.svg",
+        "icon": "icon-github.svg",
         "link": "https://www.linkedin.com/in/rayan-chambet/"
       }
     ]
