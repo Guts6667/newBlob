@@ -17,6 +17,7 @@ export default function SocialsAbout({ team, teamId }) {
               alt={item.icon}
               width={25}
               height={25}
+              priority
             />
           </Link>
         ))}

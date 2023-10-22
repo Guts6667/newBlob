@@ -11,6 +11,7 @@ export default function CardTeamHome({ image, name, role }) {
           objectFit="cover"
           alt={name}
           className=""
+          priority
         />
       </div>
       <div>

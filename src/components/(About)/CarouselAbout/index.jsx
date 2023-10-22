@@ -9,6 +9,7 @@ export default function CarouselAbout({ team, teamId, navigateLeft, navigateRigh
           alt={team[teamId].name}
           fill
           objectFit="cover"
+          priority
         />
         <div className="absolute w-full bottom-0 px-[25px] pb-[25px]  flex justify-between  ">
           <button onClick={navigateLeft}>
