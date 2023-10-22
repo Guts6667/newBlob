@@ -13,7 +13,7 @@ export default function ExperiencesAbout({ team, teamId}) {
             objectFit="cover"
           />
         </div>
-        <EmptyBtn text="Let's Meet" />
+        <EmptyBtn text="Let's Meet" path={"contact"} />
       </div>
       <div className=" flex flex-col items-center gap-25 text-center md:text-left md:items-start ">
         <h2 className="text-[40px]">EXPERIENCES</h2>

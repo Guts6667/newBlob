@@ -41,7 +41,7 @@ export default async function TeamHome() {
       <div className="flex flex-col sm:flex-row gap-50 mt-50">
         <EmptyBtn
           text="Meet The Team"
-          path={"/about"}
+          path={"about"}
           customLink={" "}
           customClass={"w-full sm:w-fit "}
         />

@@ -17,6 +17,7 @@ export default function HeaderAbout() {
         </p>
         <PlainBtn
           text="Let's Meet!"
+          path={"contact"}
           customLink={" md:self-end"}
           customClass={"w-full sm:w-fit"}
         />

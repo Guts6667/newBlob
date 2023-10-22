@@ -1,7 +1,18 @@
 "use client";
-import React from "react";
+import HoneyPot from "@/components/(Contact)/Honeypot";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import { useState } from "react";
 export default function ContactPage() {
+  const [selectedItems, setSelectedItems] = useState([]);
+  const [selectedBudget, setSelectedBudget] = useState([]);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const form = useRef(null);
   const projectItems = [
     "Web Development",
     "Mobile App",
@@ -13,14 +24,6 @@ export default function ContactPage() {
     "Illustration",
     "Other",
   ];
-  const [selectedItems, setSelectedItems] = useState([]);
-  const handleItemClick = (item) => {
-    if (selectedItems.includes(item)) {
-      setSelectedItems(selectedItems.filter((i) => i !== item));
-    } else {
-      setSelectedItems([...selectedItems, item]);
-    }
-  };
 
   const budgetRange = [
     "<€2k",
@@ -31,31 +34,65 @@ export default function ContactPage() {
     "€50k-€100k",
     ">€100k",
   ];
-  // Let's make a function to handle the budget click, the user should be able to select only one budget range
-  const handleBudgetClick = (item) => {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleItemClick = (item) => {
     if (selectedItems.includes(item)) {
       setSelectedItems(selectedItems.filter((i) => i !== item));
     } else {
-      setSelectedItems([item]);
+      setSelectedItems([...selectedItems, item]);
     }
   };
 
-  // Let's make the form work using netlify forms
+  const handleBudgetClick = (item) => {
+    if (selectedBudget.includes(item)) {
+      setSelectedBudget(selectedBudget.filter((i) => i !== item));
+    } else {
+      setSelectedBudget([item]);
+    }
+  };
 
+  let template_params = {
+    from_name: formData.name,
+    from_email: formData.email,
+    from_company: formData.company,
+    from_project: selectedItems,
+    from_budget: selectedBudget,
+    from_message: formData.message,
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      body: data,
-    })
-      .then(() => {
-        alert("Success!");
-        form.reset();
-      })
-      .catch((error) => alert(error));
-  }
+    console.log(template_params);
+    emailjs
+      .send(
+        "service_w3hol57",
+        "template_ljc7pr3",
+        template_params,
+        "NFUP3YK2Bta1k2GWK"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          // Let's empty the form and show a success message
+          form.current.reset();
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            message: "",
+          });
+          setSelectedItems([]);
+          setSelectedBudget([]);
+          alert("Your message has been sent!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  };
 
   return (
     <main className="mt-[150px] mb-[100px] flex flex-col gap-50 px-25 md:px-50">
@@ -65,25 +102,24 @@ export default function ContactPage() {
           Have an idea? We're here to turn it into reality!
         </p>
       </div>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message"></textarea>
-      </form>
+      <HoneyPot />
       <form
-        name="contact"
-        netlify
+        name="contact-form"
         method="POST"
         data-netlify="true"
         className="flex flex-col gap-25 md:w-[60%] md:self-center"
+        ref={form}
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="contact" value="contact" />
         <div className="flex flex-col">
           <label htmlFor="name">Name</label>
           <input
             name="name"
             type="text"
+            value={formData.name}
+            onChange={handleInputChange}
+            id="name"
+            autoComplete="name"
             placeholder="John Doe"
             className="py-[10px] border-b-[1px] border-lightgray outline-none font-light focus:border-black"
           />
@@ -93,6 +129,10 @@ export default function ContactPage() {
           <input
             name="email"
             type="text"
+            id="email"
+            autoComplete="email"
+            value={formData.email}
+            onChange={handleInputChange}
             placeholder="john@doe.com"
             className="py-[10px] border-b-[1px] border-lightgray outline-none font-light focus:border-black"
           />
@@ -102,6 +142,10 @@ export default function ContactPage() {
           <input
             name="company"
             type="text"
+            id="company"
+            autoComplete="on"
+            value={formData.company}
+            onChange={handleInputChange}
             placeholder="Your company name or website?"
             className="py-[10px] border-b-[1px] border-lightgray outline-none font-light focus:border-black"
           />
@@ -111,6 +155,7 @@ export default function ContactPage() {
           <div className="flex flex-wrap gap-25">
             {projectItems.map((item, index) => (
               <button
+                id="project"
                 key={index}
                 type="button"
                 className={` px-[25px] py-[15px]  border-[1px] border-lightgray rounded-full hover:shadow-sm hover:shadow-purple ${
@@ -130,10 +175,11 @@ export default function ContactPage() {
           <div className="flex flex-wrap gap-25">
             {budgetRange.map((item, index) => (
               <button
+                id="budget"
                 key={index}
                 type="button"
                 className={` px-[25px] py-[15px]  border-[1px] border-lightgray rounded-full hover:shadow-sm hover:shadow-purple ${
-                  selectedItems.includes(item)
+                  selectedBudget.includes(item)
                     ? "border-gradient-perm"
                     : "border-black text-black"
                 }`}
@@ -149,9 +195,11 @@ export default function ContactPage() {
           <label htmlFor="message">Your Message</label>
           <textarea
             name="message"
-            id=""
+            id="message"
             cols="30"
             rows=""
+            value={formData.message}
+            onChange={handleInputChange}
             className="py-[10px] border-b-[1px] border-lightgray outline-none font-light focus:border-black"
           ></textarea>
         </div>
