@@ -57,3 +57,6 @@ h4 {
     linear-gradient(to right, #9082ed, #edc3be) border-box;
   border: 1px solid transparent;
 }
+.bg-gradient {
+  background: linear-gradient(to right, #9082ed, #edc3be);
+}
