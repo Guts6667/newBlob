@@ -23,15 +23,19 @@ export default function MainAbout({ team }) {
 
   return (
     <main className="flex flex-col gap-50 transition-all duration-[500]">
-      <CarouselAbout
-        team={team}
-        teamId={teamId}
-        navigateLeft={navigateLeft}
-        navigateRight={navigateRight}
-      />
+      {team && (
+        <>
+          <CarouselAbout
+            team={team}
+            teamId={teamId}
+            navigateLeft={navigateLeft}
+            navigateRight={navigateRight}
+          />
 
-      <ExperiencesAbout team={team} teamId={teamId} />
-      <SocialsAbout team={team} teamId={teamId} />
+          <ExperiencesAbout team={team} teamId={teamId} />
+          <SocialsAbout team={team} teamId={teamId} />
+        </>
+      )}
     </main>
   );
 }
