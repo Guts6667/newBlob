@@ -12,6 +12,7 @@ export default function WorkCard({ img, client, type, path, customClass }) {
             src={`/images/${img}`}
             alt={client}
             priority
+            quality={100}
             fill
             objectFit="cover"
             className="brightness-50 scale-150 hover:scale-100 hover:brightness-100 transition-all duration-500 ease-in-out"

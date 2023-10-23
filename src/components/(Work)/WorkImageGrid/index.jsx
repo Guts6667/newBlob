@@ -13,6 +13,7 @@ export default function WorkImageGrid({work}) {
             <Image
               src={`/images/${item}`}
               fill
+              quality={100}
               objectFit="cover"
               alt={work.client}
             />
