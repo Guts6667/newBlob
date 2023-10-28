@@ -30,9 +30,11 @@ export default function WorkDescription({ work }) {
             ))}
           </div>
         </aside>
-        <div className="">
-          <BtnWebsite path={work.url} text="Visit Website" />
-        </div>
+        {work.url && (
+          <div >
+            <BtnWebsite path={work.url} text="Visit Website" />
+          </div>
+        )}
       </div>
       <div className="lg:w-[70%] flex flex-col gap-y-50">
         {work.ourClient && (
