@@ -7,13 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        height: "height",
+        "row-span": "grid-row",
+        spacing: "margin, padding",
+      },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
+        "height-auto": "height-auto 0.5s ease-in-out",
       },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
+        },
+        "height-auto": {
+          from: { height: "0px", opacity: "0" },
+          to: { height: "auto", opacity: "1" },
         },
       },
       backgroundImage: {

@@ -5,6 +5,7 @@ import BtnMenu from "../(Buttons)/BtnMenu";
 import { useState } from "react";
 import Menu from "../Menu";
 import EmptyBtn from "../(Buttons)/EmptyBtn";
+import Link from "next/link";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [showBtn, setShowBtn] = useState(false);
@@ -33,15 +34,19 @@ function Header() {
           isOpen ? "bg-black text-white" : "bg-white text-black"
         }`}
       >
-        <Image
-          src={`${isOpen ? "/images/blob-white.svg" : "/images/blob-dark.svg"}`}
-          priority
-          alt="logo"
-          width={38}
-          height={64}
-        />
+        <Link href="/">
+          <Image
+            src={`${
+              isOpen ? "/images/blob-white.svg" : "/images/blob-dark.svg"
+            }`}
+            priority
+            alt="logo"
+            width={38}
+            height={64}
+          />
+        </Link>
         <div className="flex flex-row items-center gap-x-[100px]">
-          {showBtn && !isOpen && <EmptyBtn path="cont" text="Let's Meet!" />}
+          {showBtn && !isOpen && <EmptyBtn path="contact" text="Let's Meet!" />}
           <BtnMenu isOpen={isOpen} handleClick={handleMenuClick} />
         </div>
       </header>

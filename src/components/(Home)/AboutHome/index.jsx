@@ -17,7 +17,7 @@ export default function AboutHome() {
       <div className="flex flex-col-reverse sm:flex-row justify-between gap-50">
         <EmptyBtn
           text="Let's Meet"
-          path={"/contact"}
+          path={"contact"}
           customLink={"md:self-end w-full sm:w-fit"}
           customClass={"w-full sm:w-fit"}
         />

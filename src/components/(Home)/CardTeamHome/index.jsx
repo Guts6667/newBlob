@@ -8,9 +8,9 @@ export default function CardTeamHome({ image, name, role }) {
         <Image
           src={`/images/${image}`}
           fill
-          objectFit="cover"
           alt={name}
-          className=""
+          sizes="100%"
+          className="object-cover"
           priority
         />
       </div>

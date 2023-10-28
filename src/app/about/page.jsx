@@ -9,6 +9,7 @@ export default async function AboutPage() {
     <div className="mt-[200px] px-25 md:px-50 flex flex-col gap-50">
       <HeaderAbout />
       <MainAbout team={team} />
+      
     </div>
   );
 }

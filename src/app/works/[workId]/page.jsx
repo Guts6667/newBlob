@@ -34,7 +34,8 @@ export default async function WorkPage(workId) {
           alt={work.client}
           priority
           fill
-          objectFit="cover"
+          sizes="100%"
+          className="object-cover"
         />
       </div>
       <WorkDescription work={work} />

@@ -21,7 +21,7 @@
   },
   {
     "id": 2,
-    "icon": "icon-website.svg",
+    "icon": "icon-web.svg",
     "title": "Website Development",
     "desc": "We specialize in building websites that not only look fantastic but also perform flawlessly.",
     "services": [

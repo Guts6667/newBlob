@@ -20,7 +20,7 @@ export default function Menu({ handleClick }) {
           />
         </div>
       </Link>
-      <Link href="/about" className="w-full" onClick={handleClick}>
+      <Link href="/about" className="w-full group" onClick={handleClick}>
         <div className=" font-bold flex justify-between w-full">
           <span className="text-[40px] lg:text-[72px]">About</span>
           <Image

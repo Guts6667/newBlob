@@ -10,7 +10,7 @@ export default function SocialsAbout({ team, teamId }) {
           <Link
             href={item.link}
             key={index}
-            className="relative w-50 h-50 rounded-full bg-black flex items-center justify-center hover:animate-pulse"
+            className="relative w-50 h-50 rounded-full bg-black flex items-center justify-center hover:scale-105 transition-all duration-400"
           >
             <Image
               src={`/images/${item.icon}`}

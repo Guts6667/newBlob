@@ -8,7 +8,7 @@ console.log(services)
   return (
     <section className='flex flex-col gap-50 '>
         <h2 className='text-[40px] md:text-[72px] !important'>Services</h2>
-        <div className='flex flex-wrap gap-25 '>
+        <div className='grid grid-col md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-25 '>
             {services.map((service) => (
                <CardService key={service.id}  service={service} />
             ))}
