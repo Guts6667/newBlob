@@ -24,8 +24,8 @@
     "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
     "goal": "The goal of this project was to build a platform that would help Sciences Co scale their project and reach more teachers and students. With the variety of resources they had, they wanted to build a platform that would make those more accessible and easier to use.",
     "solution": "We built a progressive web application allowing them to manage their content and resources. The platform is built with React and Laravel and is hosted on OpenOcean. The platform is also integrated with HelloAsso to allow Sciences Co to manage their subscriptions and payments. Users can access the platform on any device and benefit from a native-like experience. The administrator can manage the users, contents, and resources on the platform.",
-    "mainImage": "Sciences-co-1.png",
-    "pictures": ["Sciences-co-2.png", "Sciences-co-3.png", "Sciences-co-5.png"]
+    "mainImage": "SciencesCo-1.png",
+    "pictures": ["SciencesCo-2.png", "SciencesCo-3.png", "SciencesCo-5.png"]
   },
   {
     "id": "1",
