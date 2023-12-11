@@ -18,7 +18,8 @@
       "Resource Management",
       "Payment Integration",
       "Contact Form",
-      "Subscription Management"
+      "Subscription Management",
+      "+420% new users in 3 months"
     ],
     "ourClient": "Sciences Co is an organization that provides a platform for teachers and student to learn and teach better using cognitives sciences.",
     "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
@@ -107,5 +108,20 @@
     "solution": "For Saudi Excellence, we developed their first website, keeping it simple yet modern. It was an exciting opportunity for us to create their online presence, and we focused on making it user-friendly and easy to navigate. We wanted to reflect their values and professionalism without going overboard, ensuring the site captured their essence and offered a seamless experience for visitors.",
     "mainImage": "saudiexcellence-1.png",
     "pictures": [ "saudiexcellence-2.png", "saudiexcellence-3.png", "saudiexcellence-4.png"]
+  },
+  {
+    "id": "5",
+    "title": "SC Znojmo FK",
+    "type": "Website",
+    "url": "https://www.znojmofc.com/",
+    "date": "2023",
+    "client": "Znojmo FC",
+    "service": ["UX/UI Design", "Website Development"],
+    "features": ["Contact Form", "Responsive Design", "Multilingual"],
+    "ourClient": "SC Znojmo FK is a professional football club based in Znojmo, Czech Republic. Known for its passionate fanbase and rich history in Czech football, the club competes in the Czech National Football League.",
+    "context": "SC Znojmo FK required a dynamic and engaging online presence to connect with fans and showcase their team. They needed a website that was not only informative but also captured the spirit and passion of their club.",
+    "solution": "We designed and developed a vibrant, user-friendly website for SC Znojmo FK. The website features an interactive team roster, real-time updates of match schedules and results, and a dedicated section for fan engagement. Our focus was on creating an immersive experience that reflects the club's identity and connects with its supporters.",
+    "mainImage": "znojmo-3.jpg",
+    "pictures": ["znojmo-1.jpg", "znojmo-4.png", "znojmo-2.png"]
   }
 ]
