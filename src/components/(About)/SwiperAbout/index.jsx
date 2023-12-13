@@ -35,7 +35,7 @@ export default function SwiperAbout({ teamId, team, setTeamId }) {
                 alt={team[teamId].name}
                 fill
                 sizes="100%"
-                className="object-cover"
+                className="w-full h-full object-cover scale-80"
                 priority
               />
             </div>

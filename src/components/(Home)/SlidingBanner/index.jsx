@@ -9,6 +9,7 @@ export default function SlidingBanner() {
     "EDGE DYNAMICS",
     "MBUZZ",
     "SCIENCES CO",
+    "ZNOJMO FC"
   ];
 
   return (

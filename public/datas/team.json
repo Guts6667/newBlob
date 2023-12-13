@@ -4,7 +4,7 @@
     "name": "Wesley Peeters",
     "role": "Software Engineer & Tech Savvy",
     "image": "wesley.jpeg",
-    "bannerImage": "wesley-banner.png",
+    "bannerImage": "banner-wesley.png",
     "catchphrase": "Specialist in creative digital products, dedicated to helping founders and product owners create meaningful, effective solutions.",
     "description": [
       "With a focus on developing appealing and effective products, I bring my expertise in various tech fields to BLOB-Agency. My approach is straightforward, always staying on the cutting edge of technology.",
@@ -44,7 +44,7 @@
     "name": "Alexiane Grieu",
     "role": "UI/UX Designer & Product Manager",
     "image": "alexiane-grieu.png",
-    "bannerImage": "alexiane-banner.png",
+    "bannerImage": "banner-alexiane.png",
     "catchphrase": "I am a UX/UI Designer, blending creativity and efficiency to create the best possible digital experiences for users.",
     "description": [
       "My unconventional journey began with a Master's degree in biology, but my passion for art and digital technology led me in a different direction. For over a year, I've been pursuing my training as a Product Manager while working in an apprenticeship role in UX/UI Design, allowing me to combine creativity and efficiency.",
@@ -80,9 +80,9 @@
     "id": 2,
     "name": "Rayan Chambet",
     "role": "Product Manager & Software Engineer",
-    "image": "rayan.jpg",
+    "image": "rayan.jpeg",
     "bannerImage": "banner-rayan.png",
-    "catchphrase": "As a passionate Product Manager and Software Engineer, I drive partnerships and ensure top-notch performance, delivering excellence with every project.",
+    "catchphrase": "Hi! I'm Rayan Chambet, as a passionate Product Manager and Software Engineer, I drive partnerships and ensure top-notch performance, delivering excellence with every project.",
     "description": [
       "As a Product Manager, my foundation in Software Engineering equips me to foster seamless collaboration and deliver projects with precision and innovation at BLOB-Agency. With a diverse background and unique perspective, I foster seamless collaboration and deliver projects with precision and innovation.",
       "Passionate about problem-solving and innovation, I thrive in creative, collaborative environments, emphasizing teamwork's power in achieving impactful results. Committed to delivering high-quality digital experiences, I aim to foster lasting connections and significant business growth."
@@ -129,7 +129,7 @@
     "name": "Margaux Toquero",
     "role": "UI Designer & Motion Designer",
     "image": "margaux.jpeg",
-    "bannerImage": "margaux-banner.png",
+    "bannerImage": "banner-margaux.png",
     "catchphrase": "Blending art and technology to create impactful digital experiences.",
     "description": [
       "I am passionate about graphic and motion design, constantly exploring new realms of creativity. My love for design is mature yet always evolving, with a special interest in motion design and web design.",

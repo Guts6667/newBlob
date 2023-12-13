@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function WorkCard({ img, client, type, path, customClass }) {
   console.log("path:", path);
   return (
-    <article className="flex flex-col hover:scale-105 transition-all duration-400">
+    <article className="flex flex-col hover:scale-105 transition-all duration-400 2xl:hover:scale-100">
       <Link href={path} className="flex flex-col gap-y-25 ">
         <div
           className={`img-wrapper w-full  rounded-[25px] overflow-hidden relative ${customClass}`}
