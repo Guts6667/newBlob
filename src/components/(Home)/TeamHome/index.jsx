@@ -8,19 +8,19 @@ export default async function TeamHome() {
   const achievements = [
     {
       title: "Projects",
-      description: "2023 - 12 Projects",
+      description: "2024 - 14 Projects",
     },
     {
       title: "Websites",
-      description: "2023 - 8 Projects",
+      description: "2024 - 8 Projects",
     },
     {
       title: "Applications",
-      description: "2023 - 1 Web-application",
+      description: "2024 - 2 Web-applications - 1 Mobile-Application",
     },
     {
       title: "Consulting",
-      description: "2023 - 3 Projects",
+      description: "2024 - 3 Projects",
     },
   ];
   return (
