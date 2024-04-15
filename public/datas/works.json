@@ -1,34 +1,5 @@
 [
   {
-    "id": "0",
-    "title": "Everyday, members are learning on Sciences Cognitives",
-    "type": "Web Application",
-    "url": "https://www.sciences-cognitives.fr/",
-    "date": "2023",
-    "client": "Sciences Co",
-    "service": [
-      "Product Management",
-      "UX/UI Design",
-      "Web Application Development"
-    ],
-    "features": [
-      "Responsive Design",
-      "User Management",
-      "Content Management",
-      "Resource Management",
-      "Payment Integration",
-      "Contact Form",
-      "Subscription Management",
-      "+420% new users in 3 months"
-    ],
-    "ourClient": "Sciences Co is an organization that provides a platform for teachers and student to learn and teach better using cognitives sciences.",
-    "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
-    "goal": "The goal of this project was to build a platform that would help Sciences Co scale their project and reach more teachers and students. With the variety of resources they had, they wanted to build a platform that would make those more accessible and easier to use.",
-    "solution": "We built a progressive web application allowing them to manage their content and resources. The platform is built with React and Laravel and is hosted on OpenOcean. The platform is also integrated with HelloAsso to allow Sciences Co to manage their subscriptions and payments. Users can access the platform on any device and benefit from a native-like experience. The administrator can manage the users, contents, and resources on the platform.",
-    "mainImage": "SciencesCo-1.png",
-    "pictures": ["SciencesCo-2.png", "SciencesCo-3.png", "SciencesCo-5.png"]
-  },
-  {
     "id": "1",
     "title": "Supporting startups like Edge Dynamics making our world safer",
     "type": "Website",
@@ -72,11 +43,7 @@
     "goal": "",
     "solution": "We made a website that would reflect Alexiane's personality and her style. We used a cream theme with a modern font to give the website a modern look. The website is built with React and is hosted on Netlify.",
     "mainImage": "ag-designs-2.png",
-    "pictures": [
-      "ag-designs-1.png",
-      "ag-designs-3.png",
-      "ag-designs-4.png"
-    ]
+    "pictures": ["ag-designs-1.png", "ag-designs-3.png", "ag-designs-4.png"]
   },
   {
     "id": "3",
@@ -85,14 +52,20 @@
     "url": "https://mbuzzesports.com/",
     "date": "2022",
     "client": "MBUZZ",
-    "service": ["Branding", "UX/UI Design", "Logo Design", "Website Development", "Pitch Deck Design"],
+    "service": [
+      "Branding",
+      "UX/UI Design",
+      "Logo Design",
+      "Website Development",
+      "Pitch Deck Design"
+    ],
     "features": ["Responsive Design", "Contact Form"],
     "ourClient": "MBUZZ Esports is a division of the well-established Saudi-based company, Mbuzz Group, specializing in Industrial Communication & Technology (ICT). MBUZZ Esports leverages the expertise and network of its parent company to provide innovative gaming solutions and experiences for local enterprises and the gaming community.",
     "context": "MBUZZ Esports approached us when the new branch was just starting. They needed a website to showcase roadmaps, services, and products.  ",
     "goal": "The goal was to create something that would speak to the esport community while respecting the branding of the mother company. They wanted something modern and appealing. They also needed a pitch deck to present their company to potential investors.",
     "solution": "We've built a website that would reflect the esport community and the mother company. We used a dark theme with gradients of blue and purple to give the website a modern look. The website is built with React and is hosted on Netlify.",
     "mainImage": "mbuzz-1.png",
-    "pictures": [ "mbuzz-2.png", "mbuzz-3.png", "mbuzz-4.png"]
+    "pictures": ["mbuzz-2.png", "mbuzz-3.png", "mbuzz-4.png"]
   },
   {
     "id": "4",
@@ -107,7 +80,11 @@
     "context": "Saudi Excellence, our initial client, approached us with a limited budget and no online presence. Their goal was to establish a robust digital footprint through the creation of a modern website, aligning with their forward-thinking ethos and dedication to excellence in the security and defense technology sector.",
     "solution": "For Saudi Excellence, we developed their first website, keeping it simple yet modern. It was an exciting opportunity for us to create their online presence, and we focused on making it user-friendly and easy to navigate. We wanted to reflect their values and professionalism without going overboard, ensuring the site captured their essence and offered a seamless experience for visitors.",
     "mainImage": "saudiexcellence-1.png",
-    "pictures": [ "saudiexcellence-2.png", "saudiexcellence-3.png", "saudiexcellence-4.png"]
+    "pictures": [
+      "saudiexcellence-2.png",
+      "saudiexcellence-3.png",
+      "saudiexcellence-4.png"
+    ]
   },
   {
     "id": "5",
@@ -123,5 +100,96 @@
     "solution": "We designed and developed a vibrant, user-friendly website for SC Znojmo FK. The website features an interactive team roster, real-time updates of match schedules and results, and a dedicated section for fan engagement. Our focus was on creating an immersive experience that reflects the club's identity and connects with its supporters.",
     "mainImage": "znojmo-3.jpg",
     "pictures": ["znojmo-1.jpg", "znojmo-4.png", "znojmo-2.png"]
+  },
+  {
+    "id": "7",
+    "title": "Empowering Artists with Dropper Portal",
+    "type": "Web Application",
+    "url": "https://edmc.io/dropper/",
+    "date": "2024",
+    "client": "EDMC Network",
+    "service": [
+      "Web Application Development",
+      "Data Management",
+      "UX/UI Design"
+    ],
+    "features": [
+      "Data Visualization",
+      "User Retention Analytics",
+      "Content Management for Artists",
+      "Stream and Engagement Metrics",
+      "Real-Time Updates",
+      "Advanced Filtering by Genre, Tracks",
+      "Track Upload and Management",
+      "Responsive Web Design"
+    ],
+    "ourClient": "EDMC Network serves as a hub for electronic dance music creators and administrators, offering them a platform to manage, analyze, and enhance their musical offerings.",
+    "context": "The network needed a comprehensive portal to provide detailed insights for artists and administrators to strategize their content and engagement effectively.",
+    "goal": "To create a management portal that not only facilitates detailed analytics and data management but also enhances user engagement and artist collaboration.",
+    "solution": "The Dropper Portal was built using Preact for a lightweight and fast UI, combined with Tailwind CSS for responsive design, and PHP and Laravel for backend functionality. It features comprehensive analytics tools and content management capabilities for artists and administrators.",
+    "mainImage": "Dropper-by-BLOB-Agency-1.png",
+    "pictures": [
+      "Dropper-by-BLOB-Agency-1.png",
+      "Dropper-by-BLOB-Agency-2.png",
+      "Dropper-by-BLOB-Agency-3.png"
+    ]
+  },
+  {
+    "id": "0",
+    "title": "Everyday, members are learning on Sciences Cognitives",
+    "type": "Web Application",
+    "url": "https://www.sciences-cognitives.fr/",
+    "date": "2023",
+    "client": "Sciences Co",
+    "service": [
+      "Product Management",
+      "UX/UI Design",
+      "Web Application Development"
+    ],
+    "features": [
+      "Responsive Design",
+      "User Management",
+      "Content Management",
+      "Resource Management",
+      "Payment Integration",
+      "Contact Form",
+      "Subscription Management",
+      "+420% new users in 3 months"
+    ],
+    "ourClient": "Sciences Co is an organization that provides a platform for teachers and student to learn and teach better using cognitives sciences.",
+    "context": "Sciences Co approached us to help them build a platform that would make its management easier. Their previous website was built on Wordpress and was not scalable. A fresh start was need with a modern interface and a better user experience.",
+    "goal": "The goal of this project was to build a platform that would help Sciences Co scale their project and reach more teachers and students. With the variety of resources they had, they wanted to build a platform that would make those more accessible and easier to use.",
+    "solution": "We built a progressive web application allowing them to manage their content and resources. The platform is built with React and Laravel and is hosted on OpenOcean. The platform is also integrated with HelloAsso to allow Sciences Co to manage their subscriptions and payments. Users can access the platform on any device and benefit from a native-like experience. The administrator can manage the users, contents, and resources on the platform.",
+    "mainImage": "SciencesCo-1.png",
+    "pictures": ["SciencesCo-2.png", "SciencesCo-3.png", "SciencesCo-5.png"]
+  },
+  {
+    "id": "6",
+    "title": "Revolutionizing Music Interaction with Dropper App",
+    "type": "Mobile Application",
+    "url": "https://edmc.io/",
+    "date": "2024",
+    "client": "EDMC Network",
+    "service": ["Mobile App Development", "UI/UX Design", "Data Analytics"],
+    "features": [
+      "Music Streaming",
+      "Interactive Charts",
+      "Artist Support via Stars",
+      "User Interface Customization",
+      "Real-Time Analytics for Artists",
+      "Cross-Platform Functionality",
+      "User Feedback Collection",
+      "Beta Launch on Test Flight"
+    ],
+    "ourClient": "EDMC Network is a dynamic platform in the electronic music industry, focusing on promoting electronic dance music and supporting artists through innovative digital solutions.",
+    "context": "EDMC Network sought to enhance how fans interact with music and artists while providing artists with actionable data on their music's performance.",
+    "goal": "The goal was to develop a mobile application that allowed users and artists to engage more deeply with the music content, driving higher user retention and artist participation.",
+    "solution": "We developed Dropper App using React Native for a seamless mobile experience, integrated with PHP and Laravel backend, and TimeScale DB for efficient data handling. The app's design allows users to personalize their UI and provides artists with a dashboard for in-depth analytics.",
+    "mainImage": "Dropper-by-BLOB-Agency-9.png",
+    "pictures": [
+      "Dropper-by-BLOB-Agency-1.png",
+      "Dropper-by-BLOB-Agency-6.png",
+      "Dropper-by-BLOB-Agency-11.png"
+    ]
   }
 ]

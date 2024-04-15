@@ -4,7 +4,7 @@ import React from "react";
 
 export default function BtnWebsite({ path, text, customClass }) {
   return (
-    <Link href={`/${path}`} target="_blank">
+    <Link href={`${path}`} target="_blank">
       <button
         className={`rounded-full border border-black bg-transparent text-center py-[10px] px-[30px] w-fit flex justify-center items-center gap-x-[10px]  border-gradient  ${customClass}}`}
       >
